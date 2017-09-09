@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension	type="module" version="3.x" method="upgrade" client="site" >
+	<name>Bannermaker</name>
+	<author>Kian William Nowrouzian</author>
+	<creationDate>July 2017</creationDate>
+	<copyright>Copyright (C) 2005 - 2017  All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>mezmer121@gmail.com</authorEmail>
+	<authorUrl>http://www.extensions.lord121.ir</authorUrl>
+	<version>1.0.0</version>
+	<description><![CDATA[
+			<div style="font-weight:bold;background-color:#B94FB6;color:#fff;padding:5px">
+			<p><strong>Module Bannermaker,  if you uninstall component, module could not be of use.</strong></p>
+			<p>
+				For support &/or any question go to <a href="http://www.extensions.lord121.ir" target="_blank">Extensions</a>
+			</p>
+			<small style="float:right">ver. 1.0.0</small>
+			</div>
+     ]]>
+	 </description>
+	 <files>
+		<filename module="mod_bannermaker">mod_bannermaker.php</filename>
+		<filename>mod_bannermaker.xml</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>index.html</filename>
+	 </files>
+	 <languages folder="language">
+         <language tag="en-GB">en-GB/en-GB.mod_bannermaker.ini</language>
+         <language tag="en-GB">en-GB/en-GB.mod_bannermaker.sys.ini</language>
+     </languages>
+	 <config>
+		<fields name="params" >
+			<fieldset name="basic">
+				<field name="general_width" 
+                   type="text" 
+                   label="MOD_BANNERMAKER_WIDTH_LABEL"
+                   default="1000"
+                   filter="integer"
+                   description="MOD_BANNERMAKER_WIDTH_DESC">
+                </field>
+			    <field name="general_height" 
+                   type="text" 
+                   label="MOD_BANNERMAKER_HEIGHT_LABEL"
+                   default="190"
+                   filter="integer" 
+                   description="MOD_BANNERMAKER_HEIGHT_DESC">
+                </field>
+				<field name="font_family" 
+                   type="text" 
+                   label="MOD_BANNERMAKER_FONTFAMILY_LABEL"
+                   default="arial"
+                   filter="raw" 
+                   description="MOD_BANNERMAKER_FONTFAMILY_DESC">
+                </field>
+				<field name="font_weight" 
+                   type="text" 
+                   label="MOD_BANNERMAKER_FONTWEIGHT_LABEL"
+                   default="BOLD"
+                   filter="raw" 
+                   description="MOD_BANNERMAKER_FONTWEIGHT_DESC">
+                </field>
+				<field name="font_style" 
+                   type="text" 
+                   label="MOD_BANNERMAKER_FONTSTYLE_LABEL"
+                   default="italic"
+                   filter="raw" 
+                   description="MOD_BANNERMAKER_FONTSTYLE_DESC">
+                </field>
+				<field
+					name="moduleclass"
+					type="text"
+					label="MOD_BANNERMAKER_LABEL"
+					description="MOD_BANNERMAKER_DESC"
+					
+				/>
+			</fieldset>
+			<fieldset name="advanced">
+				<field type="sql" name="title" label="MOD_BANNERMAKER_ID_LABEL" description="MOD_BANNERMAKER_ID_DESC" query="SELECT id , title FROM #__bannermaker" key_field="id" value_field="title" />
+			</fieldset>
+			
+		</fields>
+	 </config>
+
+
+
+</extension>

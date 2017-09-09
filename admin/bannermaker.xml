@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="component" version="3.x" method="upgrade">
+    <identifier>com:bannermaker</identifier>
+    <name>Bannermaker</name>
+    <creationDate>July 2017</creationDate>
+    <author>Kian William Nowrouzian</author>
+	<copyright>Copyright (C) 2005 - 2017  All rights reserved. </copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>mezmer121@gmail.com</authorEmail>
+	<authorUrl>http://www.extensions.lord121.ir</authorUrl>
+    <version>1.0.0</version>	
+	<description><![CDATA[<div style="color:#fff; background-color:#f015d9; padding:5px;">Welcome To Bannermaker!</div>]]></description>
+	
+	<install>
+		<sql>
+            <file charset="utf8" driver="mysql">sql/install.sql</file>
+        </sql>
+    </install>
+	
+	<uninstall>
+		<sql>
+            <file charset="utf8" driver="mysql">sql/uninstall.sql</file>
+        </sql>
+    </uninstall>
+	
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.com_bannermaker.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.com_bannermaker.sys.ini</language>
+	</languages>
+	<media destination="com_bannermaker" folder="media">
+		<filename>index.html</filename>
+		<filename>com_bannermaker/icon-24_bannermaker.png</filename>
+		<folder>cache</folder>		
+	</media>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<filename>bannermaker.php</filename>
+		<filename>router.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+		<folder>helpers</folder>
+	</files>
+	<administration>
+	
+		   <menu img="media/com_bannermaker/icon-24-bannermaker.ico" link="option=com_bannermaker">COM_BANNERMAKER</menu>
+		   
+		   <files folder="admin">
+		    <filename>bannermaker.xml</filename>
+        	<filename>bannermaker.php</filename>
+            <filename>controller.php</filename>
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+			<filename>install.script.php</filename>
+
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+            <folder>models</folder>
+			<folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+          </files>
+		  
+		  <languages>
+		   <language tag="en-GB">language/en-GB/en-GB.com_bannermaker.ini</language>
+		    <language tag="en-GB">language/en-GB/en-GB.com_bannermaker.sys.ini</language>
+	    </languages>
+
+	
+	</administration>
+	
+</extension>

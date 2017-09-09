@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+    <layout title="COM_BANNERMAKER_BANNER_VIEW_DEFAULT_TITLE" option="COM_BANNERMAKER_BANNER_VIEW_DEFAULT_OPTION">
+		<help
+			key = "JHELP_MENUS_MENU_ITEM_CONTACT_SINGLE_CONTACT"
+		/>
+		<message>
+			<![CDATA[COM_BANNERMAKER_BANNER_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<fields name="params" addfieldpath="/administrator/components/com_bannermaker/models/fields">
+		<fieldset name="params" label="COM_BANNERMAKER_BASIC_OPTION_FIELDSET_LABEL" >
+			<field type="sql" name="title" label="COM_BANNERMAKER_QUERY_LABEL" description="COM_BANNERMAKER_QUERY_DSC" query="SELECT id AS value, title FROM #__bannermaker"></field>
+			<field name="general_width" 
+                   type="text" 
+                   label="COM_BANNERMAKER_WIDTH_LABEL"
+                   default="1000"
+                   filter="integer"
+                   description="COM_BANNERMAKER_WIDTH_DESC">
+                </field>
+			    <field name="general_height" 
+                   type="text" 
+                   label="COM_BANNERMAKER_HEIGHT_LABEL"
+                   default="190"
+                   filter="integer" 
+                   description="COM_BANNERMAKER_HEIGHT_DESC">
+                </field>
+				<field name="font_family" 
+                   type="text" 
+                   label="COM_BANNERMAKER_FONTFAMILY_LABEL"
+                   default="arial"
+                   filter="raw" 
+                   description="COM_BANNERMAKER_FONTFAMILY_DESC">
+                </field>
+				<field name="font_weight" 
+                   type="text" 
+                   label="COM_BANNERMAKER_FONTWEIGHT_LABEL"
+                   default="BOLD"
+                   filter="raw" 
+                   description="COM_BANNERMAKER_FONTWEIGHT_DESC">
+                </field>
+				<field name="font_style" 
+                   type="text" 
+                   label="COM_BANNERMAKER_FONTSTYLE_LABEL"
+                   default="italic"
+                   filter="raw" 
+                   description="COM_BANNERMAKER_FONTSTYLE_DESC">
+                </field>
+		</fieldset>
+		
+	</fields>
+	
+</metadata>
