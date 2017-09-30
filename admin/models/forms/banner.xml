@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <form addfieldpath="/administrator/components/com_bannermaker/models/fields">
     <fieldset name="general">
-		<field name="title"
+	   	<field name="title"
                type="text"
                label="JGLOBAL_TITLE"
                description="COM_BANNERMAKER_TITLE_DESC"
@@ -49,6 +49,13 @@
 			filter="unset"
 		/>
     </fieldset>
+	<fields name="params" >
+			<fieldset name="general_settings" label="General">
+				<field name="general_link" 
+                   type="text" 
+                   label="COM_BANNERMAKER_LINK_LABEL"
+                  description="COM_BANNERMAKER_LINK_DESC">
+                </field>
 		<fields name="params" >
 			<fieldset name="general_settings" label="General">
 				<field name="general_width" 
