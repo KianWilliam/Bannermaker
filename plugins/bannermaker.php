@@ -91,9 +91,9 @@ class PlgContentBannermaker extends JPlugin
 			endfor;
 			
 			for($i=0; $i<count($svgitems); $i++):
-               echo '<object type="image/svg+xml" data="svgfile'.$i.'.svg" width="'.$item->params->get('general_width').'px" height="'.$item->params->get('general_height').'px">';
+               echo '<a href="'.$item->params->get('general_link').'" style="display:block;"><object type="image/svg+xml" data="svgfile'.$i.'.svg" width="'.$item->params->get('general_width').'px" height="'.$item->params->get('general_height').'px" style="pointer-events:none;">';
                echo 'Browser does not support SVG!';
-               echo '</object>';
+               echo '</object></a>';
             endfor;
 			
 				
