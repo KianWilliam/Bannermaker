@@ -24,7 +24,7 @@ defined('_JEXEC') or die('Access Denied');
 
 
 
-class ModBBannermakerHelper
+class ModBannermakerHelper
 {
 	
 }
