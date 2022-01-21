@@ -7,8 +7,8 @@ yet check it after upload.
 The license is GNU/GPLv3.
 It is written for joomla 3.x,
 In comment part for special characters add backslash(\) before them.
-demo : http://www.extensions.lord121.ir/mycomponents/bannermaker-demo.html
-download : http://www.extensions.lord121.ir/mycomponents/bannermaker-download.html
+demo : https://www.extensions.kwproductions121.com/mycomponents/bannermaker-demo.html
+download : http://www.extensions.kwproductions121.com/mycomponents/bannermaker-download.html
 In case of any problem contact me at:
 mezmer121@gmail.com
 long live science.
